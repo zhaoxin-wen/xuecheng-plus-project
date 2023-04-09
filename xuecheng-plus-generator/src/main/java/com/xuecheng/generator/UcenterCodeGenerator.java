@@ -21,7 +21,7 @@ public class UcenterCodeGenerator {
 	//数据库账号
 	private static final String DATA_SOURCE_USER_NAME  = "root";
 	//数据库密码
-	private static final String DATA_SOURCE_PASSWORD  = "mysql";
+	private static final String DATA_SOURCE_PASSWORD  = "abc123";
 	//生成的表
 	private static final String[] TABLE_NAMES = new String[]{
 			"xc_company",
@@ -64,7 +64,7 @@ public class UcenterCodeGenerator {
 		// 数据库配置
 		DataSourceConfig dsc = new DataSourceConfig();
 		dsc.setDbType(DbType.MYSQL);
-		dsc.setUrl("jdbc:mysql://192.168.101.65:3306/xcplus_users"
+		dsc.setUrl("jdbc:mysql://192.168.134.135:3306/xcplus_users"
 				+ "?serverTimezone=UTC&useUnicode=true&useSSL=false&characterEncoding=utf8");
 //		dsc.setDriverName("com.mysql.jdbc.Driver");
 		dsc.setDriverName("com.mysql.cj.jdbc.Driver");
